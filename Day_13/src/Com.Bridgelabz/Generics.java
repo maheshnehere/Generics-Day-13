@@ -1,13 +1,15 @@
 public class Generics{
 
-    public Integer maxInt(Integer a, Integer b, Integer c){
-        Integer max = a;
-  
+    public <M extends Comparable > M maximum(M a, M b, M c , M d){
+        M max = a;
+
         if(b.compareTo(a) > 0){
             max = b;
         }else if (c.compareTo(max) > 0){
             max = c;
+        }else if (d.compareTo(max) > 0){
+            max = d;
         }
         return max;
-    }
+    } 
 }
