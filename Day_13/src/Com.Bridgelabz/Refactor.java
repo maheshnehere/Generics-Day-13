@@ -1,5 +1,5 @@
-public class Generics{
-
+public class Refactor {
+   
     public <M extends Comparable> M maximum(M a, M b, M c){
         M max = a;
 

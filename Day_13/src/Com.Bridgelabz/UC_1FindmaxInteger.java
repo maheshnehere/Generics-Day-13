@@ -1,8 +1,7 @@
-public class Generics{
-
-    public <M extends Comparable> M maximum(M a, M b, M c){
-        M max = a;
-
+public class UC_1FindmaxInteger {
+    public Integer maxInt(Integer a, Integer b, Integer c){
+        Integer max = a;
+  
         if(b.compareTo(a) > 0){
             max = b;
         }else if (c.compareTo(max) > 0){
